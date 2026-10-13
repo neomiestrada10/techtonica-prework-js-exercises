@@ -154,7 +154,11 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (varA == varB && (varA !== varC || varB !== varC)) {
+	answer6 = true;
+  } else {
+	answer6 = false;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -179,7 +183,22 @@ function exercise7(num7) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  switch (num7) {
+ 	case 1:
+		answer7 = "You won!";
+		break;
+	case 7:
+		answer7 = "You are lucky1";
+		break;
+	case 101:
+		answer7 = "Welcome to coding 101!";
+		break;
+	case 100000:
+		answer7 = "You are one in a million!";
+		break;
+	default:
+		answer7 = "Thanks for that!";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -196,7 +215,11 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (amount1 >= minimum && amount1 <== maximumm && amount2 >= minimum && amount2 <= maximum) {
+	answer8 = true;
+  } else {
+	answer = false;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -215,7 +238,25 @@ function exercise9(item) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (typeof item == "number") {
+  	switch (item) {
+		case 1: 
+			answer9 = "You won!";
+			break;
+		case 7:
+			answer9 = "You are lucky!";
+			break;
+		case 101:
+			answer9 = "Welcome to coding 101!";
+			break;
+		case 1000000:
+			answer9 = "You are one in a million!";
+			break;
+		default:
+			answer9 = "Thanks for that!";
+  } else if (typeof item !== "number") {
+	answer9 = "Please send a number, that was a " + typeof item";
+  }}
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -237,7 +278,15 @@ function exercise10(num10) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (num10 % 3 == 0) {
+	answer10 = "Fizz";
+  } else if (num10 % 5 == 0) {
+	answer10 = "Buzz";
+  } else is (num10 % 15 == 0) {
+	answer10 = "Fizz Buzz";
+  } else {
+	answer10 = num10;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -247,6 +296,7 @@ function exercise10(num10) {
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+// I found this exercise hard in a way where I had to read the instructions carefully in order to understand the problem.
+// After this hard part, it was somewhat straightforward to follow.
 
 // Commit your file to GitHub.
