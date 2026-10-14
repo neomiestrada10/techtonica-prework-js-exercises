@@ -1,1 +1,1 @@
-# techtonica-prework-js-exercises
+# techtonica-prework-objects-tasks
